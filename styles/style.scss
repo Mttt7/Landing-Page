@@ -1,0 +1,43 @@
+body {
+    width:100vw;
+    height:100vh;
+    margin:0;
+    
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    display: flex;
+
+    section{
+        flex:none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: start;
+        
+
+        &:nth-of-type(1){
+            background-color: brown;
+            color: pink;
+        }
+        &:nth-of-type(2){
+            background-color: yellow;
+            color: black;
+        }
+        &:nth-of-type(3){
+            background-color: purple;
+            color: wheat;
+        }
+
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15em;
+        }
+    }
+}
